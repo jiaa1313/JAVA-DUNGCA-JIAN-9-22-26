@@ -1,0 +1,110 @@
+// JAVA PROGRAMING LANGUAGE
+// SYNTAX
+// CODE PROPER
+import java.util.Scanner; 
+// Syntax for calling the input function on the variable in the module scanner
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Hello, World!");
+
+//  DATA TYPES 
+//int - whole number
+//double - double precisions of decimal number
+//float - single precisions of decimal number 'f'
+//char - a single charater of text (single quotes)
+//String - not primative text
+//boolean - true or false
+
+// DECLARING VARIABLE OF DIFFERENT DATA TYPES---
+int age = 20;
+double price = 20.30;
+float weight = 70.6f;
+char grade = 'A';
+boolean isStudent = true;
+String name = "Alice";
+
+//--- OUTPUT USING System.out.println ---
+System.out.println("Name: " + name); 
+System.out.println("Age: " + age); 
+System.out.println("Price: " + price); 
+System.out.println("Weight: " + weight); 
+System.out.println("Grade: " + grade); 
+System.out.println("Is Student? " + isStudent);
+        
+// --- GETTING INPUT USING SCANNER ---
+        
+    Scanner scanner = new Scanner(System.in);
+
+    // Reading the one word (stops at the whitespace)
+    System.out.print("\nEnter your city: ");
+    String userCity = scanner.next(); //reads one word
+    System.out.println("You live in " + userCity);
+
+    // Reading the full line (including space)
+    scanner.nextLine(); // Clears leftover newline from previous next()
+    System.out.print("Enter a sentence about yourself: ");
+    String fullSentence = scanner.nextLine(); // reads the entire line or paragraph
+    System.out.println("You said: " + fullSentence);
+
+    scanner.close();
+        
+// Operators and Expressions 
+// =, -, *, /, %, &&, ||, >, <, <=, >=,!=
+int a = 10, b = 3;
+System.out.println("\na + b = " + (a + b));
+System.out.println("a - b = " + (a - b));
+System.out.println("a * b = " + (a * b));
+System.out.println("a / b = " + (a / b));
+System.out.println("a % b = " + (a % b));
+
+double x = 10, y = 3;
+System.out.println("x / y = " + (x / y));
+
+// Relational operators (return bool: 1 or 0)
+System.out.println("\na == b = " + (a == b));
+System.out.println("a != b = " + (a != b));
+System.out.println("a > b = " + (a > b));
+System.out.println("a < b = " + (a < b));
+System.out.println("a >= b = " + (a >= b));
+System.out.println("a <= b = " + (a <= b));
+
+// Logical Operators
+boolean p = true, q = false;
+    System.out.println("\np && q: " + (p && q)); // and
+    System.out.println("p || q: " + (p || q)); // or
+    System.out.println("!p : " + (!p)); // not true
+    System.out.println("!q : " + (!q)); // not false
+
+// Assignment Operators
+// +=, -=, *=, /=
+int score = 50;
+score += 10;
+System.out.println("\nScore after the += 10: " + score);
+score *= 2;
+System.out.println("\nScore after the *= 10: " + score);
+
+// Increment / Decrement Operators
+int counter = 5;
+        System.out.println("\ncounter ++ (post); " + counter++);
+         System.out.println("counter now: " + counter++);
+        System.out.println("++counter (pre); " + ++counter);
+
+//Control flow(if/else, loops (for, while, do while))
+System.out.println("Enter your exam score: ");
+        int Examscore = scanner.nextInt();
+
+        if (Examscore >= 90){
+            System.out.println("Grade: A");        
+        } else if (Examscore >= 80){
+            System.out.println("Grade: B");    
+        } else if (Examscore >= 70){
+            System.out.println("Grade: C");     
+        } else {
+            System.out.println("Grade: F");
+        }    
+        
+// SWITCH CASE STATEMENT
+
+    }
+}
