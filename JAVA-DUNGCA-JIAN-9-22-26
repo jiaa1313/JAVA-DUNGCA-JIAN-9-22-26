@@ -103,7 +103,7 @@ System.out.println("Enter your exam score: ");
         } else {
             System.out.println("Grade: F");
         }    
-        
+        scanner.close(); 
 // SWITCH CASE STATEMENT
 
     }
